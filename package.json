@@ -1,0 +1,35 @@
+{
+  "name": "rollup-setting",
+  "version": "1.0.0",
+  "description": "rollup-setting",
+  "main": "rollup.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup src/main.js -f cjs -o dist/bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wanho1108/rollup-setting.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wanho1108/rollup-setting/issues"
+  },
+  "homepage": "https://github.com/wanho1108/rollup-setting#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "rollup": "^0.59.2",
+    "rollup-plugin-babel": "^3.0.4",
+    "rollup-plugin-commonjs": "^9.1.3",
+    "rollup-plugin-json": "^3.0.0",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "rollup-plugin-tslint": "^0.1.34",
+    "rollup-plugin-typescript2": "^0.14.0",
+    "rollup-plugin-uglify": "^2.0.1",
+    "uglify-js": "^3.3.26"
+  },
+  "dependencies": {
+    "rollup-plugin-minify": "^1.0.3"
+  }
+}
