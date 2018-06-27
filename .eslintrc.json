@@ -1,0 +1,13 @@
+{
+  "env": {
+    "browser": true
+  },
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "extends": "airbnb-base",
+  "rules": {
+    "no-var": "off",
+    "linebreak-style": ["error", "windows"]
+  }
+}

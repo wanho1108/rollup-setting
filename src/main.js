@@ -1,7 +1,9 @@
-var doubleNumber = require("./moduels/util");
+var doubleNumber = require('./moduels/util');
 
 function hello() {
-  console.log('hello');
+  document.write('hello');
 }
 
-console.log(doubleNumber(4)); // 8
+hello();
+
+document.write(doubleNumber(4)); // 8
