@@ -1,26 +1,19 @@
 'use strict';
 
-import commonjs from 'rollup-plugin-commonjs';
-import nodeResolve from 'rollup-plugin-node-resolve';
+import babel from 'rollup-plugin-babel';
 import eslint from 'rollup-plugin-eslint';
-import uglify from 'rollup-plugin-uglify';
 
 export default {
-  input: 'src/main.js',
+  input: 'src/es5/main.js',
   output: {
     name: 'app',
-    file: 'dist/bundle.js',
+    file: 'dist/es5/bundle.js',
     format: 'iife',
     sourceMap: 'inline'
   },
   plugins: [
     eslint(),
-    nodeResolve({
-      jsnext: true,
-      main: true,
-      browser: true
-    }),
-    commonjs({
+    babel({
       exclude: 'node_modules/**'
     }),
     (process.env.NODE_ENV === 'production' && uglify())

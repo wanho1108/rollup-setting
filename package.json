@@ -20,6 +20,8 @@
   "homepage": "https://github.com/wanho1108/rollup-setting#readme",
   "devDependencies": {
     "babel-core": "^6.26.3",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-es2015": "^6.24.1",
     "cross-env": "^5.2.0",
     "eslint": "^5.0.1",
     "eslint-config-airbnb-base": "^13.0.0",
